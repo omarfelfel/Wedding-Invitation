@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Omar &amp; Esraa · Choose a design</title>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Great+Vibes&family=Cormorant+Garamond:ital,wght@0,400;0,500;1,400&display=swap">
+<style>
+*{box-sizing:border-box;min-width:0}
+body{margin:0;background:#fdf7f0;color:#4a3b34;font:18px/1.6 'Cormorant Garamond',Georgia,serif;text-align:center;padding:48px max(5vw,18px)}
+h1{font-family:'Great Vibes',cursive;font-weight:400;font-size:clamp(52px,10vw,76px);line-height:1.1;margin:0}
+p{margin:6px 0 0;font-style:italic;color:#6b564a}
+.grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(min(100%,230px),1fr));gap:18px;max-width:1040px;margin:40px auto 0}
+a.card{display:flex;flex-direction:column;justify-content:flex-end;min-height:220px;padding:22px;border-radius:14px;text-decoration:none;text-align:left;transition:transform .25s}
+a.card:hover{transform:translateY(-4px)}
+a.card:focus-visible{outline:2px solid #94602f;outline-offset:4px}
+.card strong{font-size:26px;font-weight:500;line-height:1.2}
+.card span{font-size:16px;opacity:.85}
+.lilies{background:linear-gradient(160deg,#fdf7f0,#f6d3c6);color:#4a3b34;border:1px solid #e9c3b3}
+.deco{background:radial-gradient(ellipse at 50% 20%,#5a1a2e,#2d0a15);color:#f6ead8}
+.olive{background:linear-gradient(160deg,#f7f5ec,#dfe3c9);color:#2f3627;border:1px solid #d4d8bd}
+.blue{background:linear-gradient(160deg,#f3f6f9,#cfdbe7);color:#22303f;border:1px solid #c6d3e0}
+</style>
+</head>
+<body>
+<h1>Omar &amp; Esraa</h1>
+<p>Four invitation designs, same content. Tap one to open it.</p>
+<div class="grid">
+  <a class="card lilies" href="./"><strong>Lilies</strong><span>Ivory and blush, lily wreath</span></a>
+  <a class="card deco" href="deco/"><strong>Burgundy Deco</strong><span>Art Deco arch in gold</span></a>
+  <a class="card olive" href="olive/"><strong>Olive Grove</strong><span>Olive branches on linen</span></a>
+  <a class="card blue" href="blue/"><strong>Dusty Blue</strong><span>Arched window, baby's breath</span></a>
+</div>
+</body>
+</html>
