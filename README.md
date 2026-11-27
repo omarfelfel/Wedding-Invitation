@@ -4,11 +4,12 @@ Thursday, 20 May 2027 · Gardenia Hall
 
 | Page | Design |
 | --- | --- |
-| `index.html` | Lilies (ivory and blush) — the main invitation |
+| `index.html` | Envelope invitation — the main page (burgundy envelope, photo, music, RSVP) |
+| `lilies/` | Lilies (ivory and blush) |
 | `deco/` | Burgundy Deco |
 | `olive/` | Olive Grove |
 | `blue/` | Dusty Blue |
-| `designs.html` | A page to compare the four designs |
+| `designs.html` | A page to compare all the designs |
 
 ## Publish on GitHub Pages
 
@@ -21,9 +22,13 @@ Thursday, 20 May 2027 · Gardenia Hall
 
 Wishes are emailed privately to the couple through [FormSubmit](https://formsubmit.co) — nobody else sees them.
 
-1. The address is set in each page's `GUESTBOOK_EMAIL` (root, `deco/`, `olive/`, `blue/`).
+1. The address is set in `DETAILS.rsvpEmail` on the main page and in `GUESTBOOK_EMAIL` on the other designs.
 2. Send yourself a test wish from the live site. FormSubmit emails you a one-time **Activate** link; click it. Every wish after that arrives in your inbox.
 
 ## Countdown
 
 The countdown runs to 20 May 2027, 00:00 Cairo time. To count to the ceremony start instead, change the `Date.UTC(...)` line in the page's script (Cairo is UTC+3 in May).
+
+## Main page details
+
+On the main page, open `index.html` and edit the `DETAILS` block at the top of the script to add the start time, dress code or arrival note; each section appears once it has a value.
